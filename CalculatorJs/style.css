@@ -1,0 +1,25 @@
+.center{
+    background-color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.container-inputs{
+    padding: 10px;
+    margin: 10px
+}
+
+input{
+    padding: 10px;
+    border-bottom: 2px solid red;
+    margin-top: 10px;
+}
+.container-buttons{
+    padding: 10px;
+}
