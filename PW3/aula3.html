@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome"> <br>
+        Sobrenome: <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome"> 
+        Idade: <input type="number" name="idade" id="idade">
+    </form>    
+    <button onclick="analise()">Analisar</button>
+    <p id="resu"></p>
+    <p id="votar"></p>
+
+    <script>
+       function analise(){
+        let x = document.getElementById('nome').value;
+        let y = document.getElementById('sobrenome').value;
+        resu.innerHTML = x + ' ' + y;
+
+        let idade = document.getElementById('idade').value
+        if (idade < 16) {
+            votar.innerHTML = ("Você não pode votar e não pode dirigir!")   
+        }else if ((idade >= 18) && (idade < 65)) {
+            votar.innerHTML = ("Você deve votar e pode dirigir!")
+        }else if ((idade >= 16) && (idade <=17)){ 
+            votar.innerHTML = ("Você pode votar(não obrigatório) e não pode dirigir!")
+        }else{
+            votar.innerHTML = ("Você pode votar(não obrigatório) e pode dirigir!")
+        }
+    }
+    
+
+
+    </script>
+</body>
+</html>

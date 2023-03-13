@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo Welt</title>
+</head>
+<body>
+    <h2>Hello World!</h2>
+    <p id="aula1">
+        Привет!
+    </p>
+    <button type="button" onclick="document.getElementById('aula1').innerHTML = '欢迎!'">Click Here</button>
+    <button type="button" onclick="document.getElementById('aula1').innerHTML = 'Привет!'">Return</button>
+    <button type="button" onclick="voltaTexto()">Voltar Texto!</button>
+    <button type="button" onclick="operacoes()">Calcular</button>
+    <p id="resultados">
+
+    </p>
+    <script>
+        function voltaTexto(){
+        document.getElementById('aula1').innerHTML = 'Привет!';
+        document.getElementById('aula1').style.color = '#DC143C';
+        alert("Text has been changed")
+        console.log("Se leu mamou!")
+        }
+        function operacoes(){
+            var a = 10;
+            var b = 5;
+            var soma = a+b;
+            var subtracao = a-b;
+            console.log('soma =',a+b);
+            console.log('subtração =',a-b);
+            console.log('multiplicação =',a*b);
+            console.log('divisão =',a/b);
+
+            document.getElementById("resultados").innerHTML = 
+            'soma => '+ a + '+' + b + '=' + soma + '<br>';
+            document.getElementById("resultados").innerHTML += 
+            'subtração => '+ a + '-' + b + '=' + subtracao;
+        }
+    </script>
+</body>
+</html>
